@@ -1,14 +1,14 @@
 {
-  "name": "angular-ui-boostrap-demo",
+  "name": "angular-ui-bootstrap-demo",
   "version": "1.0.0",
-  "description": "angular-ui-boostrap-demo",
+  "description": "angular-ui-bootstrap-demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhanghuanzhou/angular-ui-boostrap-demo.git"
+    "url": "git+https://github.com/zhanghuanzhou/angular-ui-bootstrap-demo.git"
   },
   "keywords": [
     "abc"
@@ -16,7 +16,7 @@
   "author": "zhanghuanzhou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zhanghuanzhou/angular-ui-boostrap-demo/issues"
+    "url": "https://github.com/zhanghuanzhou/angular-ui-bootstrap-demo/issues"
   },
-  "homepage": "https://github.com/zhanghuanzhou/angular-ui-boostrap-demo#readme"
+  "homepage": "https://github.com/zhanghuanzhou/angular-ui-bootstrap-demo#readme"
 }
