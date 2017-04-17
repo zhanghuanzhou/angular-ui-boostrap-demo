@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body >
+	<div ng-controller="TooltipDemoCtrl">
+    
+<h4>提示工具（Tooltip）插件 - 锚</h4>
+    <p>
+        I can even contain HTML as a
+        <a href="#" uib-tooltip-html="htmlTooltip">scope variable</a> or
+        <a href="#" uib-tooltip-html="'static. {{dynamicTooltipText}}. <b>bold.</b>'">inline string</a>
+    </p>
+
+    <p>
+      <style>
+        /* Specify styling for tooltip contents */
+        .tooltip.customClass .tooltip-inner {
+          color: #880000;
+          background-color: #ffff66;
+          box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        }
+        /* Hide arrow */
+        .tooltip.customClass .tooltip-arrow {
+          display: none;
+        }
+      </style>
+      I can have a custom class. <a href="#" uib-tooltip="I can have a custom class applied to me!" >Check me out!</a>
+    </p>
+
+
+   
+</div>
+</body>
+<script src="libs/angularjs/angular.min.js"></script>
+<script src="libs/angularjs/angular-sanitize.min.js"></script>
+<script src="libs/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script src="libs/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script>
+angular.module('myApp',['ui.bootstrap','ngSanitize'])  
+    .controller('TooltipDemoCtrl', function ($scope, $sce) {
+  $scope.dynamicTooltip = 'Hello, World!';
+  $scope.dynamicTooltipText = 'dynamic';
+  $scope.htmlTooltip = $sce.trustAsHtml('I\'ve been made <b>bold</b>!');
+  $scope.placement = {
+    options: [
+      'top',
+      'top-left',
+      'top-right',
+      'bottom',
+      'bottom-left',
+      'bottom-right',
+      'left',
+      'left-top',
+      'left-bottom',
+      'right',
+      'right-top',
+      'right-bottom'
+    ],
+    selected: 'top'
+  };
+});
+
+     
+    
+</script>
+</html>
